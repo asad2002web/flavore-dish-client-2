@@ -52,9 +52,8 @@ const ChefDetails = () => {
 
         <div>
           <div className="my-10">
-            <h1 className="text-center fw-bold py-10">Recipes</h1>
-
-            <div className="d-flex gap-3">
+            <h1 className="text-center mb-3 mt-5 fw-bold py-10">Recipes</h1>
+            <div className="d-md-flex gap-3">
               {recipes.map((cooks) => (
                 <ChefDetailsCard
                   cooks={cooks}

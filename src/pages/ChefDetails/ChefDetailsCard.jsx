@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Rating from "react-rating";
-import { FcLike,FcSerialTasks,FcStart } from "react-icons/Fc";
+import { FcLike,FcSerialTasks,FcStart} from "react-icons/Fc";
 import { toast } from "react-toastify";
 
 
@@ -17,28 +17,28 @@ const ChefDetailsCard = ({ cooks }) => {
   }
 
   return (
-    <div>
+    <div className="my-3">
       <div>
         <img className="img-fluid" src={img} alt="" />
       </div>
       <div>
-        <h2 className="py-2 fw-bold"> {name}</h2>
+        <h2 className="my-2 fs-4 fw-bold"> {name}</h2>
       </div>
       <div>
-        <div className="md:p-10">
+        <div>
           <div>
-            <p className="py-4">ingredient</p>
+            <p className="py-2 fs-4 text-danger fw-bold">ingredient</p>
             {ingredients.map((ingredient, index) => (
               <p className="m-0" key={index}>
-                {ingredient}
+                   *  {ingredient}
               </p>
             ))}
           </div>
           <div>
-            <p className="py-4 fw-bold">Cooking method</p>
+            <p className=" py-2 fs-4 text-danger fw-bold">Cooking method</p>
             {method.map((meth, index) => (
               <p className="m-0" key={index}>
-                {meth}
+               <span className="text-danger">#</span>  { meth}
               </p>
             ))}
           </div>
@@ -46,8 +46,7 @@ const ChefDetailsCard = ({ cooks }) => {
       </div>
       <div>
         <div className="d-flex">
-          
-          <p className="text-2xl">
+          <p className="fs-5 mt-2">
             <Rating
               placeholderRating={rating}
               emptySymbol={<FcSerialTasks className="text-orange-300"></FcSerialTasks>}
@@ -63,7 +62,7 @@ const ChefDetailsCard = ({ cooks }) => {
          
             {active ? (
               <button class=" cursor-not-allowed">
-                <FcLike className="text-5xl"></FcLike>
+                <FcLike className="fs-4"></FcLike>
               </button>
             ) : (
               <>
