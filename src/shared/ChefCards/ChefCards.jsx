@@ -6,7 +6,7 @@ import ChefDetails from "../../Pages/ChefDetails/ChefDetails";
 
 const ChefCards = ({ chef }) => {
   return (
-    <div className="container pb-5">
+    <div className="container pb-3">
       <div className="row">
         <h2 className="text-center pb-5 fw-bold">Our Best Chefs Gallery</h2>
         {chef.map((chefAllData) => (
