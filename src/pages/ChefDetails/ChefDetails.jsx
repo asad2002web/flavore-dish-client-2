@@ -19,31 +19,30 @@ const ChefDetails = () => {
   } = ChefBio;
   return (
     <div className="container mt-5 py-5">
-      <h2>chef Complete Details {recipes.length}</h2>
+      <h2 className="mt-3">chef Complete Details {recipes.length}</h2>
       <section>
-        <div className="d-flex">
+        <div className="d-md-flex gap-4 my-4 align-items-center">
           <div>
             <img className="img-fluid" src={chef_picture} alt="" />
           </div>
           <div>
             <h1 className="fw-bold"> {chef_name}</h1>
-            <p className=" text-danger"> {bio}</p>
+            <p className=" text-dark"> {bio}</p>
 
-            {/*  */}
-            <div className="d-flex py-3 ">
-              <FcLike className=" mx-2"></FcLike>
+           
+            <div className="d-flex align-items-center py-3 ">
+              <FcLike className="fs-4 mx-2"></FcLike>
               <h4> Likes : {likes_num}</h4>
             </div>
 
-            <div className="d-flex">
-              <RxCookie className="mx-2"></RxCookie>
+            <div className="d-flex align-items-center">
+              <RxCookie className="fs-4 mx-2"></RxCookie>
               <h4> num recipes : {num_recipes}</h4>
             </div>
 
-            <div className="d-flex py-2">
-              <MdDateRange className="mx-2"></MdDateRange>
+            <div className="d-flex align-items-center py-2">
+              <MdDateRange className=" fs-4 mx-2"></MdDateRange>
               <h4 className="fw-bold">
-                {" "}
                 years of experience : {years_of_experience}
               </h4>
             </div>
