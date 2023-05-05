@@ -41,12 +41,6 @@ const Navber = () => {
               >
                 Blog
               </Link>
-              <Link
-                className="text-decoration-none text-white fw-bold px-3"
-                to="/errorpage"
-              >
-                ErrorPage
-              </Link>
             </Nav>
             <Nav>
               {user ? (
