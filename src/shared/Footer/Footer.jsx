@@ -91,12 +91,12 @@ const Footer = () => {
                   </li>
                   <li>
                     <h6 className="text-white">
-                      Email: <a href="">fresh@food.com</a>
+                      Email: <a href="">flavoredish@food.com</a>
                     </h6>
                   </li>
                   <li>
                     <h6 className="text-white">
-                      Website: <a href="">www.freshfood.com</a>
+                      Website: <a href="">www.flavoredish.com</a>
                     </h6>
                   </li>
                   <li>

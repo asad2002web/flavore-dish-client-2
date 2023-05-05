@@ -59,14 +59,13 @@ const ChefDetailsCard = ({ cooks }) => {
 
         <div>
           <button onClick={HandelLike} disabled={active}>
-         
             {active ? (
               <button class=" cursor-not-allowed">
                 <FcLike className="fs-4"></FcLike>
               </button>
             ) : (
               <>
-                <button className="btn btn-danger">ADD TO Favorite</button>{" "}
+                <button className="btn rounded btn-danger">ADD TO Favorite</button>{" "}
               </>
             )}
           </button>
