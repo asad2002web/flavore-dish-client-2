@@ -53,10 +53,10 @@ const Navber = () => {
                 <>
                   <img
                     style={{ width: "40px" }}
-                    title={user.email}
+                    title={user.displayName}
                     className="rounded-circle mx-2 border border-2 border-white"
                     src={user.photoURL}
-                    alt="Profile photo"
+                    alt="Profile Photo"
                   ></img>
                   <button
                     onClick={handleSignOut}
