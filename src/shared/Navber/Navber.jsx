@@ -55,7 +55,7 @@ const Navber = () => {
                     style={{ width: "40px" }}
                     title={user.email}
                     className="rounded-circle mx-2 border border-2 border-white"
-                    src={profile}
+                    src={user.photoURL}
                     alt="Profile photo"
                   ></img>
                   <button
